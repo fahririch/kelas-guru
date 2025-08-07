@@ -1,19 +1,42 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - KelasGuru</title>
-    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjU2IDU2TDU2IDE2Mi41VjE4NEwyNTYgMjkwLjVMNDU2IDE4NFYxNjIuNUwyNTYgNTZaIiBmaWxsPSIjMzY4NWZmIi8+PHBhdGggZD0iTTQ1NiAyMDhMNDEzIDIyOFYzMTBDMzkwLjUgMzQ0LjUgMzUxIDM3NiAyNTYgMzc2QzE2MSAzNzYgMTIxLjUgMzQ0LjUgOTkgMzEwVjIyOEw1NiAyMDhWMzM2Qzg3LjUgMzkwLjUgMTU4IDQ1NiAyNTYgNDU2QzM1NCA0NTYgNDI0LjUgMzkwLjUgNDU2IDMzNlYyMDhaIiBmaWxsPSIjMzY4NWZmIi8+PHBhdGggZD0iTTM2OCAyNDJWMzA2LjVMMzk2IDI4MlYyMjNMMzY4IDI0MloiIGZpbGw9IiMzNjg1ZmYiLz48cGF0aCBkPSJNMTY5IDIzMkwxNTEgMjI4LjVMMTQzIDI1MkwxNjAgMjUwTDE2OSAyMzJaIiBzdHJva2U9IiMzNjg1ZmYiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTE2OSAyMzJMMjI1IDI0NUwyOTYgMjQwLjVMMzQwIDIxMiIgc3Ryb2tlPSIjMzY4NWZmIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==" type="image/svg+xml">
+    <title>Login - KelasGuru</title>    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjU2IDU2TDU2IDE2Mi41VjE4NEwyNTYgMjkwLjVMNDU2IDE4NFYxNjIuNUwyNTYgNTZaIiBmaWxsPSIjMzY4NWZmIi8+PHBhdGggZD0iTTQ1NiAyMDhMNDEzIDIyOFYzMTBDMzkwLjUgMzQ0LjUgMzUxIDM3NiAyNTYgMzc2QzE2MSAzNzYgMTIxLjUgMzQ0LjUgOTkgMzEwVjIyOEw1NiAyMDhWMzM2Qzg3LjUgMzkwLjUgMTU4IDQ1NiAyNTYgNDU2QzM1NCA0NTYgNDI0LjUgMzkwLjUgNDU2IDMzNlYyMDhaIiBmaWxsPSIjMzY4NWZmIi8+PHBhdGggZD0iTTM2OCAyNDJWMzA2LjVMMzk2IDI4MlYyMjNMMzY4IDI0MloiIGZpbGw9IiMzNjg1ZmYiLz48cGF0aCBkPSJNMTY5IDIzMkwxNTEgMjI4LjVMMTQzIDI1MkwxNjAgMjUwTDE2OSAyMzJaIiBzdHJva2U9IiMzNjg1ZmYiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTE2OSAyMzJMMjI1IDI0NUwyOTYgMjQwLjVMMzQwIDIxMiIgc3Ryb2tlPSIjMzY4NWZmIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==" type="image/svg+xml">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="shadcn-styles.css"> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shadcn-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
             background-color: hsl(var(--background));
         }
         
-        /* Loading animation styles (from your original code) */
+        /* Login form styles */
+        .login-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+        }
+        
+        .login-form {
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Loading animation styles */
         .loading {
             position: relative;
             pointer-events: none;
@@ -35,24 +58,32 @@
         }
 
         @keyframes button-loading-spinner {
-            from { transform: rotate(0turn); }
-            to { transform: rotate(1turn); }
+            from {
+                transform: rotate(0turn);
+            }
+            to {
+                transform: rotate(1turn);
+            }
         }
     </style>
 </head>
-<body class="bg-gray-100">
-    <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg p-8 w-full max-w-sm shadow-xl">
+<body>
+    <!-- Login Form -->
+    <div class="login-overlay">
+        <div class="login-form">
             <div class="flex justify-center mb-6">
-                <svg class="w-16 h-16 text-blue-600" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-16 h-16 text-primary" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M256 56L56 162.5V184L256 290.5L456 184V162.5L256 56Z" fill="currentColor"/>
                     <path d="M456 208L413 228V310C390.5 344.5 351 376 256 376C161 376 121.5 344.5 99 310V228L56 208V336C87.5 390.5 158 456 256 456C354 456 424.5 390.5 456 336V208Z" fill="currentColor"/>
+                    <path d="M368 242V306.5L396 282V223L368 242Z" fill="currentColor"/>
+                    <path d="M169 232L151 228.5L143 252L160 250L169 232Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M169 232L225 245L296 240.5L340 212" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
-            <h2 class="text-2xl font-bold text-center text-gray-800 mb-4">Login to KelasGuru</h2>
+            <h2 class="text-2xl font-bold text-center mb-6">Login to KelasGuru</h2>
             
             <div id="login-error" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 hidden">
-                <span id="login-error-message"></span>
+                <span id="login-error-message">Invalid username or password</span>
             </div>
             
             <form id="login-form">
@@ -60,18 +91,18 @@
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
                         Username
                     </label>
-                    <input id="username" type="text" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Masukkan username" required>
+                    <input id="username" type="text" class="shadcn-input" placeholder="Enter your username" required>
                 </div>
                 
                 <div class="mb-6">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
                         Password
                     </label>
-                    <input id="password" type="password" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Masukkan password" required>
+                    <input id="password" type="password" class="shadcn-input" placeholder="Enter your password" required>
                 </div>
                 
                 <div class="flex items-center justify-between">
-                    <button type="submit" id="login-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition-colors">
+                    <button type="submit" id="login-btn" class="shadcn-btn shadcn-btn-primary w-full py-2 px-4">
                         Sign In
                     </button>
                 </div>
@@ -83,110 +114,81 @@
         </div>
     </div>
 
+    <!-- API Integration -->
+    <script src="js/api.js"></script>
     <script>
-        // 🚀 Ganti dengan URL Web App Anda dari Google Apps Script
-        const SCRIPT_URL = "URL_APPS_SCRIPT_ANDA"; 
-
-        // Pemilihan Elemen DOM
-        const loginForm = document.getElementById('login-form');
-        const loginButton = document.getElementById('login-btn');
-        const errorDiv = document.getElementById('login-error');
-        const errorMessageSpan = document.getElementById('login-error-message');
-
-        // Fungsi untuk menampilkan dan menyembunyikan pesan error
-        function showLoginError(message) {
-            errorMessageSpan.textContent = message;
-            errorDiv.classList.remove('hidden');
-        }
-        function hideLoginError() {
-            errorDiv.classList.add('hidden');
-        }
-
-        // Fungsi untuk mengatur status loading pada tombol
-        function setButtonLoading(isLoading) {
-            if (isLoading) {
-                loginButton.classList.add('loading');
-                loginButton.disabled = true;
-                loginButton.dataset.originalText = loginButton.textContent;
-                loginButton.textContent = 'Signing in...';
-            } else {
-                loginButton.classList.remove('loading');
-                loginButton.disabled = false;
-                if (loginButton.dataset.originalText) {
-                    loginButton.textContent = loginButton.dataset.originalText;
-                }
-            }
-        }
-
-        // Fungsi utama yang menangani proses login
-        async function handleLogin(event) {
-            event.preventDefault(); // Mencegah form refresh halaman
-            hideLoginError();
-            setButtonLoading(true);
-
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            const payload = {
-                action: 'login',
-                username: username,
-                password: password
-            };
-
-            try {
-                const response = await fetch(SCRIPT_URL, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-
-                const result = await response.json();
-
-                if (result.success) {
-                    // 🟢 Jika login berhasil
-                    // Simpan token dan data user ke localStorage
-                    localStorage.setItem('kelasguru_token', result.token);
-                    localStorage.setItem('kelasguru_user', JSON.stringify(result.user));
-                    
-                    // Alihkan ke dashboard
-                    window.location.href = 'dashboard.html'; // Ganti dengan halaman tujuan Anda
-                } else {
-                    // 🔴 Jika login gagal, tampilkan pesan error dari server
-                    showLoginError(result.error || 'Username atau password salah.');
-                }
-
-            } catch (error) {
-                console.error('Login Fetch Error:', error);
-                showLoginError('Terjadi kesalahan. Periksa koneksi atau hubungi admin.');
-            } finally {
-                // Selalu hentikan loading, baik berhasil maupun gagal
-                setButtonLoading(false);
-            }
-        }
-        
-        // Fungsi untuk memeriksa apakah user sudah login sebelumnya
-        function checkExistingSession() {
-            const token = localStorage.getItem('kelasguru_token');
-            const user = localStorage.getItem('kelasguru_user');
-            
-            // Verifikasi sederhana, idealnya ada validasi token ke server
-            if (token && user) {
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle login form submission
+            document.getElementById('login-form').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                hideLoginError();
+                
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                
+                const loginButton = document.getElementById('login-btn');
+                setButtonLoading(loginButton, true);
+                
                 try {
-                    JSON.parse(user); // Pastikan data user valid
+                    const response = await login(username, password);
+                    
+                    if (response.success) {
+                        // Store user data in localStorage
+                        localStorage.setItem('kelasguru_user', JSON.stringify(response.user));
+                        
+                        // Redirect to dashboard
+                        window.location.href = 'dashboard.html';
+                    } else {
+                        showLoginError(response.error || 'Failed to login');
+                        setButtonLoading(loginButton, false);
+                    }
+                } catch (error) {
+                    showLoginError('An error occurred. Please try again.');
+                    console.error('Login error:', error);
+                    setButtonLoading(loginButton, false);
+                }
+            });
+            
+            // Check if already logged in
+            const userData = localStorage.getItem('kelasguru_user');
+            if (userData) {
+                try {
+                    JSON.parse(userData); // Validate JSON
                     window.location.href = 'dashboard.html';
-                } catch(e) {
-                    // Jika data tidak valid, hapus dari localStorage
-                    localStorage.removeItem('kelasguru_token');
+                } catch (e) {
                     localStorage.removeItem('kelasguru_user');
                 }
             }
+        });
+        
+        // Toggle loading state on buttons
+        function setButtonLoading(button, isLoading) {
+            if (isLoading) {
+                button.classList.add('loading');
+                button.disabled = true;
+                // Store original text
+                button.dataset.originalText = button.textContent;
+                button.textContent = 'Signing in...';
+            } else {
+                button.classList.remove('loading');
+                button.disabled = false;
+                // Restore original text
+                if (button.dataset.originalText) {
+                    button.textContent = button.dataset.originalText;
+                }
+            }
         }
         
-        // Event Listener utama
-        document.addEventListener('DOMContentLoaded', () => {
-            checkExistingSession(); // Cek sesi saat halaman dimuat
-            loginForm.addEventListener('submit', handleLogin); // Tambahkan listener ke form
-        });
+        function showLoginError(message) {
+            const errorEl = document.getElementById('login-error');
+            const errorMessageEl = document.getElementById('login-error-message');
+            errorMessageEl.textContent = message;
+            errorEl.classList.remove('hidden');
+        }
+        
+        function hideLoginError() {
+            document.getElementById('login-error').classList.add('hidden');
+        }
     </script>
 </body>
-</html>
+</html> 
